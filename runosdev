@@ -10,4 +10,4 @@ docker run --rm --privileged -ti \
        -v $PWD:$MOUNTPOINT \
        -p 127.0.0.1:$RUNOS_PORT:$RUNOS_PORT \
        -h runos \
-       webconnru/runos
+       runos
