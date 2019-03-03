@@ -23,4 +23,4 @@ echo 'Defaults env_keep += "PATH http_proxy https_proxy LD_LIBRARY_PATH"' >> /et
 ip a
 
 # run su with current user
-sudo /bin/bash --rcfile /etc/bashrc.sh
+sudo --login /bin/bash --rcfile /etc/bashrc.sh

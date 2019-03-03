@@ -8,6 +8,9 @@ docker run --rm --privileged -ti \
        -e DEV_UID=$UID \
        -e DEV_USER=$USER \
        -v $PWD:$MOUNTPOINT \
+       -v /usr/src:/usr/src \
+       -v /lib/modules:/lib/modules \
+       -v /linux-kernel:/linux-kernel \
        -p 127.0.0.1:$RUNOS_PORT:$RUNOS_PORT \
        -h runos \
        runos

@@ -19,5 +19,8 @@ else
         echo '-> WARNING: No runos directory found here, you need to run "source ../debug_run_env.sh" by yourself'
 fi
 
+PATH=/userdata/runos/build:$PATH
+service openvswitch-switch start
+
 # use bash-completion
 . /etc/bash_completion
