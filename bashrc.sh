@@ -20,9 +20,10 @@ else
 fi
 
 PATH=/userdata/runos/build:$PATH
+PATH=/userdata/orig-runos/build:$PATH
 service openvswitch-switch start
 
-alias ovs-ofctl='ovs-ofctl -OOpenFlow13'
 
 # use bash-completion
 . /etc/bash_completion
+alias ovs-ofctl="ovs-ofctl -OOpenFlow13"

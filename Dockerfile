@@ -32,7 +32,7 @@ RUN apt -y install libboost-program-options-dev libedit-dev
 
 RUN git clone https://github.com/fmtlib/fmt.git && cd fmt && mkdir build -p && cd build && cmake .. && make && make install
 
-RUN pip install pytest
+RUN pip install pytest requests simplejson
 RUN apt -y install gdb
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
