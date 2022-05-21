@@ -19,7 +19,7 @@ else
         echo '-> WARNING: No runos directory found here, you need to run "source ../debug_run_env.sh" by yourself'
 fi
 
-PATH=/userdata/runos/build:$PATH
+PATH=/userdata/drunos/build:$PATH
 PATH=/userdata/orig-runos/build:$PATH
 service openvswitch-switch start
 
